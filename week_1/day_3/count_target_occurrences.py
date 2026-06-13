@@ -15,3 +15,12 @@ for i in arr:
 for i, j in freq.items():
     print("Number of times target occurred:", j)
 
+
+def count_t_occuts(arr, target):
+    tc = 0
+    for i in arr:
+        if i == target:
+            tc += 1
+    print(f"'{target}' occured {tc} times in the given array.")
+
+count_t_occuts(arr, target)
