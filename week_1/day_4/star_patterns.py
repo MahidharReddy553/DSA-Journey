@@ -72,6 +72,7 @@ def s_triangle(n):
 # s_triangle(5)
 
 def h_diamond(n):
+    print('*' * (n * 2 + 1))
     for i in range(n):
         for j in range(n - i):
             print('*', end = '')
@@ -80,7 +81,6 @@ def h_diamond(n):
         for j in range(n - i):
             print('*', end = '')
         print()
-
     for i in range(n):
         for j in range(i + 1):
             print('*', end = '')
@@ -89,8 +89,9 @@ def h_diamond(n):
         for j in range(i + 1):
             print('*', end = '')
         print()
+    print('*' * (n * 2 + 1))
 
-h_diamond(5)
+# h_diamond(5)
 
 def butterfly(n):
     for i in range(n):
@@ -110,3 +111,15 @@ def butterfly(n):
             print('*', end = '')
         print()
 # butterfly(5)
+
+
+def h_square(n):
+    for i in range(n):
+        for j in range(n):
+            if i == 0 or j == n - 1 or i == n-1 or j == 0:
+                print('*', end = ' ')
+            else:
+                print(' ', end = ' ')
+        print()
+
+h_square(5)
