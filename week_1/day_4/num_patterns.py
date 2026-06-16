@@ -64,3 +64,18 @@ def inc_tri(n):
 
 # inc_tri(5)
 
+def n_squarering(n):
+    
+    for i in range(2 * n - 1):
+        for j in range(2 * n - 1):
+            t = i
+            b = j
+            r = (2*n - 2) - i
+            l = (2*n - 2) - j
+            # print(t,b,l,r)
+            m = min(t,b,r,l)
+            print(n - m, end = ' ')
+
+        print()
+
+n_squarering(4)
