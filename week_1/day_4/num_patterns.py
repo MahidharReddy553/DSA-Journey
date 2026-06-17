@@ -78,4 +78,23 @@ def n_squarering(n):
 
         print()
 
-n_squarering(4)
+# n_squarering(4)
+
+def pascal_tri(n):
+    
+    for i in range(n):
+        for j in range(n - i):
+            print(' ', end = ' ')
+        
+        p = ((i*2)+1)//2
+        k = 1
+        for j in range(i*2+1):
+            print(k, end = ' ')
+
+            if j < p:
+                k += 1
+            else:
+                k -= 1
+        print()
+
+pascal_tri(5)
