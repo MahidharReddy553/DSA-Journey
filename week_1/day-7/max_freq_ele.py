@@ -9,6 +9,7 @@ for i in arr:
         freqs[i] = 1
 
 print(freqs)
+print(max(freqs, key=freqs.get))
 max_freq = sorted(freqs.items(), key = lambda x : -x[1])
 print(max_freq)
 print(max_freq[0][0])
